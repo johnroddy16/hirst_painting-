@@ -1,16 +1,5 @@
-#!/usr/bin/env python3 
+#!/usr/bin/env python3  
 
-import colorgram as cg
+color_list = [(231, 238, 233), (242, 233, 237), (186, 160, 139), (143, 166, 178), (148, 173, 156), (122, 94, 83), (183, 148, 158), (126, 81, 91), (81, 107, 125), (218, 202, 145), (86, 111, 96), (167, 105, 118), (174, 105, 95), (214, 178, 186), (175, 202, 186), (218, 180, 172), (102, 144, 116), (89, 142, 156), (143, 136, 98), (170, 200, 207), (114, 43, 54), (184, 189, 203), (117, 124, 146), (46, 54, 67), (62, 55, 50), (66, 51, 61), (97, 51, 46), (49, 61, 85), (50, 61, 57), (52, 71, 59), (69, 67, 52), (45, 70, 76)]
 
-colors = cg.extract('hirst_tate_L02864_9.jpg', 100)  # 100 should give me each color, even though there are not 100 colors 
-
-rgb_colors = []
-
-for color in colors:
-    r = color.rgb.r
-    g = color.rgb.g
-    b = color.rgb.b
-    rgb_color = (r, g, b) 
-    rgb_colors.append(rgb_color)
-    
-print(rgb_colors)
+# we will create a dot painting using the colors in color_list 
